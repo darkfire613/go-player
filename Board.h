@@ -4,5 +4,11 @@
 class Board
 {
   private:
-    int 
-}
+    int xSize;
+    int ySize;
+    Intersection *boardArr [][];
+
+  public:
+    //constructors
+    Board(int, int);
+};
