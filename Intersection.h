@@ -6,6 +6,7 @@ class Intersection
     char status;
     int xPos;
     int yPos;
+    bool inGroup;
     static char EMPTY;
     static char BLACK;
     static char WHITE;

@@ -5,8 +5,11 @@ Board::Board(int x, int y)
 {
   int xSize = x;
   int ySize = y;
-  Intersection ** boardArr;
+  boardArr = new 
 
-  //TODO: Move to right spot
-  delete [][] boardArr;
+}
+
+Board::~Board()
+{
+
 }
