@@ -11,5 +11,5 @@ Board::Board(int x, int y)
 
 Board::~Board()
 {
-
+  delete[] board;
 }
