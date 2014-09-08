@@ -20,6 +20,7 @@ class Intersection
     void setPos (int, int);
     void setXPos (int);
     void setYPos (int);
+    void setInGroup (bool);
     void setStatusBlack ();
     void setStatusWhite ();
     void setStatusEmpty ();

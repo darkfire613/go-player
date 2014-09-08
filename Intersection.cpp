@@ -11,12 +11,14 @@ Intersection::Intersection (int x, int y)
 {
   setPos (x, y);
   setStatus (EMPTY);
+  setInGroup (false);
 }
 
 Intersection::Intersection (int x, int y, char c)
 {
   setPos (x,y);
   setStatus (c);
+  setInGroup (false);
 }
 
 //setters
@@ -34,6 +36,11 @@ void setXPos (int x)
 void setYPos (int y)
 {
   yPos = y;
+}
+
+void setInGroup (bool b)
+{
+  inGroup = b;
 }
 
 void setStatusBlack ()
