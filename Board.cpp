@@ -3,9 +3,13 @@
 //constructors
 Board::Board(int x, int y)
 {
-  int xSize = x;
-  int ySize = y;
-  board = new Intersection [xSize][ySize];
+  xSize = x;
+  ySize = y;
+  board = new Intersection [xSize];
+  for (int i = 0; i < xSize; i++)
+    {
+      board[i] = new Intersection [ySize]; 
+    }
 
 }
 
