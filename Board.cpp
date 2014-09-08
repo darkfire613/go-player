@@ -11,5 +11,10 @@ Board::Board(int x, int y)
 
 Board::~Board()
 {
+  for (int i = 0; i < xSize; i++)
+    {
+      delete[] board[i];
+    }
+
   delete[] board;
 }
