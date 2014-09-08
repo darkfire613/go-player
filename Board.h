@@ -6,7 +6,7 @@ class Board
   private:
     int xSize;
     int ySize;
-    Intersection ** boardArr;
+    Intersection **board;
 
   public:
     //constructors
