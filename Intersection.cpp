@@ -2,11 +2,14 @@
 
 #include "Intersection.h"
 
-char Intersection::EMPTY = '+';
-char Intersection::BLACK = 'X';
-char Intersection::WHITE = 'O';
-
 //constructors
+Intersection::Intersection()
+{
+  setPos (0,0);
+  setStatus(EMPTY);
+  setInGroup(false);
+}
+
 Intersection::Intersection (int x, int y)
 {
   setPos (x, y);
