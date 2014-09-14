@@ -1,9 +1,6 @@
 //Intersection.h
-<<<<<<< HEAD
-=======
 #ifndef INTERSECTION_H
 #define INTERSECTION_H
->>>>>>> gh-pages
 
 class Intersection
 {
@@ -12,14 +9,6 @@ class Intersection
     int xPos;
     int yPos;
     bool inGroup;
-<<<<<<< HEAD
-    static char EMPTY;
-    static char BLACK;
-    static char WHITE;
-
-  public:
-    //constructors
-=======
     const char EMPTY = '+';
     const char BLACK = 'X';
     const char WHITE = 'O';
@@ -27,7 +16,6 @@ class Intersection
   public:
     //constructors
     Intersection ();
->>>>>>> gh-pages
     Intersection (int, int);
     Intersection (int, int, char);
 
