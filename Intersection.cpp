@@ -6,14 +6,14 @@
 Intersection::Intersection()
 {
   setPos (0,0);
-  setStatus(EMPTY);
-  setInGroup(false);
+  setStatus (Intersection::EMPTY);
+  setInGroup (false);
 }
 
 Intersection::Intersection (int x, int y)
 {
   setPos (x, y);
-  setStatus (EMPTY);
+  setStatus (Intersection::EMPTY);
   setInGroup (false);
 }
 
@@ -25,54 +25,59 @@ Intersection::Intersection (int x, int y, char c)
 }
 
 //setters
-void setPos (int x, int y)
+void Intersection::setPos (int x, int y)
 {
   xPos = x;
   yPos = y;
 }
 
-void setXPos (int x)
+void Intersection::setXPos (int x)
 {
   xPos = x;
 }
 
-void setYPos (int y)
+void Intersection::setYPos (int y)
 {
   yPos = y;
 }
 
-void setInGroup (bool b)
+void Intersection::setInGroup (bool b)
 {
   inGroup = b;
 }
 
-void setStatusBlack ()
+void Intersection::setStatus(char c)
 {
-  status = BLACK;
+  status = c;
 }
 
-void setStatusWhite ()
+void Intersection::setStatusBlack ()
 {
-  status = WHITE;
+  status = Intersection::BLACK;
 }
 
-void setStatusEmpty ()
+void Intersection::setStatusWhite ()
 {
-  status = EMPTY;
+  status = Intersection::WHITE;
+}
+
+void Intersection::setStatusEmpty ()
+{
+  status = Intersection::EMPTY;
 }
 
 //getters
-int getXPos ()
+int Intersection::getXPos ()
 {
   return xPos;
 }
 
-int getYPos()
+int Intersection::getYPos()
 {
   return yPos;
 }
 
-char getStatus()
+char Intersection::getStatus()
 {
   return status;
 }

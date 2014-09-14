@@ -32,3 +32,17 @@ Board::~Board()
 
   delete[] board;
 }
+
+Intersection Board::getInter(int x, int y)
+{
+  Intersection emptyInter;
+  if (x > xSize || y > ySize)
+    {
+      std::cout << "Requested intersection is out of bounds" << std::endl;
+      return emptyInter;
+    }
+  else
+    {
+      return board[x][y];
+    }
+}

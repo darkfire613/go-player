@@ -9,21 +9,24 @@ class Intersection
     int xPos;
     int yPos;
     bool inGroup;
-    const char EMPTY = '+';
-    const char BLACK = 'X';
-    const char WHITE = 'O';
 
   public:
+    //constants
+    static const char EMPTY = '+';
+    static const char BLACK = 'X';
+    static const char WHITE = 'O';
+
     //constructors
     Intersection ();
-    Intersection (int, int);
-    Intersection (int, int, char);
+    Intersection (int x, int y);
+    Intersection (int x, int y, char c);
 
     //setters
-    void setPos (int, int);
-    void setXPos (int);
-    void setYPos (int);
-    void setInGroup (bool);
+    void setPos (int x, int y);
+    void setXPos (int x);
+    void setYPos (int y);
+    void setInGroup (bool b);
+    void setStatus(char c);
     void setStatusBlack ();
     void setStatusWhite ();
     void setStatusEmpty ();
@@ -36,3 +39,5 @@ class Intersection
     //functions
 
 };
+
+#endif

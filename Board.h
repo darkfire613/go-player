@@ -2,7 +2,9 @@
 
 #ifndef BOARD_H
 #define BOARD_H
+
 #include "Intersection.h"
+#include <iostream>
 
 class Board
 {
@@ -17,4 +19,11 @@ class Board
 
     //destructor
     ~Board();
+
+    //setters
+
+    //getters
+    Intersection getInter(int x, int y);
 };
+
+#endif
