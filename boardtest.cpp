@@ -6,14 +6,16 @@ using namespace std;
 
 int main()
 {
-  Board gameboard (5,5);
-  for (int i = 0; i < 5; i++)
+  int x = 13;
+  int y = 13;
+  Board gameboard (x,y);
+  for (int i = 0; i < x; i++)
     {
-      for (int j = 0; j < 5; j++)
+      for (int j = 0; j < y; j++)
       {
-        cout << gameboard.getInter(i,j).getXPos() << gameboard.getInter(i,j).getYPos()
-        << gameboard.getInter(i,j).getStatus() << endl;
+        cout << gameboard.getInter(i,j).getStatus() << " ";
       }
+      cout << endl;
     }
   return 0;
 }

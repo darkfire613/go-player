@@ -23,6 +23,7 @@ Board::Board(int x, int y)
   }
 }
 
+//destructor
 Board::~Board()
 {
   for (int i = 0; i < xSize; i++)
@@ -33,6 +34,27 @@ Board::~Board()
   delete[] board;
 }
 
+//setters
+void Board::setInter(int x, int y, char c)
+{
+  switch (c)
+  {
+    case Intersection::EMPTY:
+      board[x][y].setStatusEmpty();
+      break;
+    case Intersection::BLACK:
+      board[x][y].setStatusBlack();
+      break;
+    case Intersection::WHITE:
+      board[x][y].setStatusWhite();
+      break;
+    default:
+      std::cout << "Invalid intersection status. Enter +, X, or 0 (empty, black, white)" << std::endl;
+
+  }
+}
+
+//getters
 Intersection Board::getInter(int x, int y)
 {
   Intersection emptyInter;

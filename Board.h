@@ -21,7 +21,8 @@ class Board
     ~Board();
 
     //setters
-
+    void setInter (int x, int y, char c);
+    
     //getters
     Intersection getInter(int x, int y);
 };
