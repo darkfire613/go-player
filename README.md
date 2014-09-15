@@ -5,19 +5,19 @@ An attempt at creating a learning Go-playing algorithm.
 
 Right now, all the program is draw an empty board to the terminal. An empty board is represented by an x by y array of plusses, looking something like the following:
 
-+ + + + + + + + + + + + +
-+ + + + + + + + + + + + + 
-+ + + + + + + + + + + + + 
-+ + + + + + + + + + + + + 
-+ + + + + + + + + + + + + 
-+ + + + + + + + + + + + + 
-+ + + + + + + + + + + + + 
-+ + + + + + + + + + + + + 
-+ + + + + + + + + + + + + 
-+ + + + + + + + + + + + + 
-+ + + + + + + + + + + + + 
-+ + + + + + + + + + + + + 
-+ + + + + + + + + + + + + 
+    + + + + + + + + + + + + +
+    + + + + + + + + + + + + + 
+    + + + + + + + + + + + + + 
+    + + + + + + + + + + + + + 
+    + + + + + + + + + + + + + 
+    + + + + + + + + + + + + + 
+    + + + + + + + + + + + + + 
+    + + + + + + + + + + + + + 
+    + + + + + + + + + + + + + 
+    + + + + + + + + + + + + + 
+    + + + + + + + + + + + + + 
+    + + + + + + + + + + + + + 
+    + + + + + + + + + + + + + 
 
 To get this yourself, do the following (OSX and Linux):
 
